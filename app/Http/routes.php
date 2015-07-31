@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'IndexController@get_index');
-Route::get('admin', IndexController@get_admin');
+Route::get('admin', 'IndexController@get_admin');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
