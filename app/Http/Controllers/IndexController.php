@@ -4,7 +4,7 @@ class IndexController extends Controller {
 
 	public function get_index() {
         //Get our bulletins to display
-        $bulletins = Bulletins::orderBy("updated_at", "DESC");
+        $bulletins = Bulletin::orderBy("updated_at", "DESC");
 		return view('index')->with(["bulletins" => $bulletins]);
 	}
 
