@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Bulletin;
+
 class IndexController extends Controller {
 
 	public function get_index() {
